@@ -1,0 +1,22 @@
+{
+  "name": "@tony_win2win/common",
+  "version": "1.0.2",
+  "description": "Common files of w2w",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "./build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
+  },
+  "keywords": [],
+  "author": "TonyDung",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^3.0.0",
+    "typescript": "^3.8.3"
+  }
+}

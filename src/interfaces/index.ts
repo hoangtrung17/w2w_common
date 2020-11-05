@@ -1,0 +1,1 @@
+export { AuthInfo } from './auth.interface'
